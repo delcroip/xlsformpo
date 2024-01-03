@@ -29,7 +29,8 @@ def process_xform(source_path, source_lang = 'en'):
     #inject trads
     out = inject_trad(dfs, trads)
     #print output
-    export(out, base)
+    if trads.languages:
+        export(out, base)
     #print pot
     trads.to_po_file(os.path.join(base,f'{filename}.pot'))
 
@@ -53,7 +54,7 @@ def trad_df(df, trads):
         for column in columns:
             if clean_column(column) in TRAD_MAP:
                 trad_code = lang_column(column)
-                values+=list(trads.get_trads(row[column]).values())
+                values+=list(trads.get_trads(row[column], force_dict=True).values())
             else:
                 values.append(row[column])
             col_idx

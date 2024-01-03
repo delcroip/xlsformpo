@@ -9,8 +9,6 @@ class SingletonLangClass(object):
     
     def __init__(self, base, filename, langs):
         self.po_file = POFile()
-        if not langs:
-            raise Exception("no translation detected")
         for lang_code in langs:
             lang =  gettext.translation(filename, f'{base}/locales' , languages=[lang_code])
             lang.install()
