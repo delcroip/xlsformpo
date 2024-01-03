@@ -1,0 +1,73 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "Now eat !"
+msgstr "Now eat !"
+
+msgid "Sorry for the bad presentiation"
+msgstr "Sorry for the bad presentiation"
+
+msgid "Sorry to hear that, but without your feedback we cannot improve ..."
+msgstr "Sorry to hear that, but without your feedback we cannot improve ..."
+
+msgid "Please tell us Why"
+msgstr "Please tell us Why"
+
+msgid "Do you agree to discuss ?&nbsp;"
+msgstr "Do you agree to discuss ?&nbsp;"
+
+msgid "We will discuss how we could make it better"
+msgstr "We will discuss how we could make it better"
+
+msgid "Page-2"
+msgstr "Page-2"
+
+msgid "None of the above"
+msgstr "None of the above"
+
+msgid "Angy"
+msgstr "Angy"
+
+msgid "Bored"
+msgstr "Bored"
+
+msgid "Hungry"
+msgstr "Hungry"
+
+msgid "path: Other page"
+msgstr "path: Other page"
+
+msgid "Bad presentation"
+msgstr "Bad presentation"
+
+msgid "**None** cannot be selected together with choice."
+msgstr "**None** cannot be selected together with choice."
+
+msgid "Why ?"
+msgstr "Why ?"
+
+msgid "No"
+msgstr "No"
+
+msgid "We are happy for you"
+msgstr "We are happy for you"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "Are you happy"
+msgstr "Are you happy"
+
+msgid "Page-1"
+msgstr "Page-1"

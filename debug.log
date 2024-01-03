@@ -1,0 +1,4 @@
+[2024-01-03 22:48:32,163] {main.py:65} INFO - Process input file
+[2024-01-03 22:48:32,409] {/home/delcpa/Development/xlsformtrad/xlsformpo/serializers/xlsform.py:38} INFO - loading sheet survey
+[2024-01-03 22:48:32,423] {/home/delcpa/Development/xlsformtrad/xlsformpo/serializers/xlsform.py:38} INFO - loading sheet choices
+[2024-01-03 22:48:32,429] {/home/delcpa/Development/xlsformtrad/xlsformpo/serializers/xlsform.py:38} INFO - loading sheet settings

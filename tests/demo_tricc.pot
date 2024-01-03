@@ -1,0 +1,66 @@
+#
+msgid ""
+msgstr ""
+
+msgid "None of the above"
+msgstr ""
+
+msgid "Angy"
+msgstr ""
+
+msgid "Bored"
+msgstr ""
+
+msgid "Hungry"
+msgstr ""
+
+msgid "Bad presentation"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "path: Other page"
+msgstr ""
+
+msgid "Now eat !"
+msgstr ""
+
+msgid "Sorry for the bad presentiation"
+msgstr ""
+
+msgid "Sorry to hear that, but without your feedback we cannot improve ..."
+msgstr ""
+
+msgid "Please tell us Why"
+msgstr ""
+
+msgid "Do you agree to discuss ?&nbsp;"
+msgstr ""
+
+msgid "We will discuss how we could make it better"
+msgstr ""
+
+msgid "Page-2"
+msgstr ""
+
+msgid "**None** cannot be selected together with choice."
+msgstr ""
+
+msgid "Why ?"
+msgstr ""
+
+msgid "We are happy for you"
+msgstr ""
+
+msgid "Are you happy"
+msgstr ""
+
+msgid "nan"
+msgstr ""
+
+msgid "Page-1"
+msgstr ""
