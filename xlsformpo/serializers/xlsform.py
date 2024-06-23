@@ -41,7 +41,7 @@ def parse_sheets(input_file, excudedWorksheets=None):
 
             worksheet= worksheet.replace("_", ".")
             # strip space
-            df = df.dropna(how='all').map(lambda x: x.strip() if type(x)==str else x)
+            df = df.dropna(how='all').applymap(lambda x: x.strip() if type(x)==str else x)
             if worksheet == "choices":
                 if validate_choices_sheet(df):
                     df_choices = df
@@ -110,20 +110,20 @@ def validate_entities_sheet(df):
 def export(dfs, base, filename= None):
     #settings={'form_title':title,'form_id':form_id,'version':version,'default_language':'English (en)','style':'pages'} 
     if not filename:
-        filename = dfs['settings']['form_id'].iloc[0]  + '_translated.xlsx'    
+        filename = f"{dfs['settings']['form_id'].iloc[0]}_translated.xlsx"    
     # update-version
     now = datetime.datetime.now()
     version_date=now.strftime('%Y%m%d%H%M')
     #TODO avoid adding datetime to a version already using it
     current_version = dfs['settings']['version'].iloc[0]
-    dfs['settings']['version'].iloc[0] =  str(current_version) + '_' + str(version_date)
+    dfs['settings']['version'].iloc[0] = f"{current_version}_{version_date}"
     output_path = os.path.join(base, filename)
     #create a Pandas Excel writer using XlsxWriter as the engine
     writer = pd.ExcelWriter(output_path, engine='xlsxwriter')
-    dfs['survey'].to_excel(writer, sheet_name='survey',index=False)
-    dfs['choices'].to_excel(writer, sheet_name='choices',index=False)
-    dfs['settings'].to_excel(writer, sheet_name='settings',index=False)
+    dfs['survey'].to_excel(writer, sheet_name='survey', index=False)
+    dfs['choices'].to_excel(writer, sheet_name='choices', index=False)
+    dfs['settings'].to_excel(writer, sheet_name='settings', index=False)
     if 'entities' in dfs and dfs['entities']>0:
-        dfs['entities'].to_excel(writer, sheet_name='settings',index=False)
+        dfs['entities'].to_excel(writer, sheet_name='settings', index=False)
 
     writer.close()
