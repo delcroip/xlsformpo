@@ -24,7 +24,7 @@ def parse_excel_sheets(data_dictionary_file, excludedWorksheets):
     for worksheet in worksheets:
         logger.info("loading sheet {0}".format(worksheet).replace("\u2265", " "))
         if worksheet.lower() not in excludedWorksheets:
-            filtereddatetime_sheets.append(worksheet)
+            filtered_sheets.append(worksheet)
     return filtered_sheets
 
 def parse_sheets(input_file, excudedWorksheets=None):
